@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImageScaleExercise"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Width="400" Height="564">
+
+    <Viewbox>
+        <Grid>
+            <Image Stretch="None" Source="FullPic.png" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" >
+
+                <StackPanel>
+                    <Image Stretch="Uniform" Source="FullPic_L_2.png" Opacity="0.8"></Image>
+                    <Image Stretch="Uniform" Source="FullPic_L_4.png" Opacity="0.8"></Image>
+                    <Image Stretch="Uniform" Source="FullPic_L_6.png" Opacity="0.8"></Image>
+                </StackPanel>
+
+                <StackPanel>
+                    <Image Stretch="Uniform" Source="FullPic_L_3.png"></Image>
+                    <Image Stretch="Uniform" Source="FullPic_L_5.png" Opacity="0.8"></Image>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+    </Viewbox>
+
 </Window>
